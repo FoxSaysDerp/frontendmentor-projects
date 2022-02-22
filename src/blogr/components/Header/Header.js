@@ -14,7 +14,7 @@ const Header = (menu) => {
 
    return (
       <>
-         <header className={classNames("", { ["scrolled"]: !headerVisible })}>
+         <header className={classNames("", { scrolled: !headerVisible })}>
             <nav className="container header">
                <div className="header__nav header__nav--left">
                   <a href="/" style={{ padding: "8px" }}>
