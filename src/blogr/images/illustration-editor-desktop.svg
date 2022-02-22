@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 925 882" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient id="i" y1="27.881%" y2="72.119%">
+<stop stop-color="#FF8F71" offset="0"/>
+<stop stop-color="#FF3E55" offset="1"/>
+</linearGradient>
+<linearGradient id="h" y1="41.725%" y2="58.275%">
+<stop stop-color="#FF8F71" offset="0"/>
+<stop stop-color="#FF3E55" offset="1"/>
+</linearGradient>
+<filter id="j" x="-10.9%" y="-11.7%" width="121.8%" height="132.8%">
+<feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0"/>
+</filter>
+<rect id="g" width="642" height="427" rx="15"/>
+</defs>
+<g transform="translate(40)" fill="none" fill-rule="evenodd">
+<rect transform="matrix(1 0 0 -1 0 890)" x="145" y="144" width="600" height="602" rx="300" fill="#2D2E40" opacity=".08"/>
+<rect transform="matrix(1 0 0 -1 0 882)" x="105.5" y="100.5" width="679" height="681" rx="339.5" opacity=".5" stroke="#2D2E40"/>
+<rect transform="matrix(1 0 0 -1 0 882)" x="5.5" y=".5" width="879" height="881" rx="439.5" opacity=".25" stroke="#2D2E40"/>
+<g transform="translate(0 242)">
+<mask id="f" fill="#fff">
+<use xlink:href="#g"/>
+</mask>
+<g fill-rule="nonzero">
+<use fill="#000" filter="url(#j)" xlink:href="#g"/>
+<use fill="url(#i)" xlink:href="#g"/>
+</g>
+<path d="M3 125h636a3 3 0 013 3v296a3 3 0 01-3 3H3a3 3 0 01-3-3V128a3 3 0 013-3z" fill="#2D2E40" fill-rule="nonzero" mask="url(#f)"/>
+<rect x="90.523" y="47.709" width="135.78" height="137.16" rx="3" fill="#FFF" fill-rule="nonzero" mask="url(#f)"/>
+<ellipse cx="158.42" cy="116.89" rx="39.306" ry="39.36" fill="#2D2E40" mask="url(#f)"/>
+<rect x="248.94" y="47.709" width="302.54" height="325.62" rx="3" fill="#FFF" fill-rule="nonzero" mask="url(#f)"/>
+</g>
+<path transform="translate(0 242)" d="m209 284c47.125-73.367 81.977-113.01 104.56-118.94 33.87-8.886 23.765 83.14 72.535 72.473 48.77-10.666 54.716-103.97 91.603-108.37 36.887-4.397 56.402 80.946 72.515 88.81 10.742 5.241 24.005-6.094 39.79-34.007" stroke="url(#h)" stroke-linecap="round" stroke-width="8"/>
+</g>
+</svg>

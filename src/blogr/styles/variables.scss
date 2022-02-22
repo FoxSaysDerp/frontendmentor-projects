@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+
+// Typography
+$font-size: 16px;
+$overpass: "Overpass", sans-serif;
+$ubuntu: "Ubuntu", sans-serif;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+// CTA Text
+$burnt-sienna: #f06160;
+
+// CTA bg
+$froly: #f28387;
+
+// Headings
+$cloud-burst: #253e59;
+$white: #fff;
+
+// Footer text
+$french-gray: #c8c8cb;
+
+// Body copy
+$trout: #4d5761;
+
+// Footer bg
+$shark: #25252d;
+
+//// Gradients
+// Intro
+$sandy-brown: #f39674;
+$carnation: #ef5157;
+$header-gradient: linear-gradient(90deg, $sandy-brown, $carnation);
+
+// Body
+$charade: #2c2d3e;
+$gun-powder: #3f4062;
+
+// Shadows
+$shadow: 8px 8px 43px -10px rgba($shark, 0.5);

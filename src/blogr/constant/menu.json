@@ -1,0 +1,68 @@
+[
+   {
+   "name": "Product",
+   "waypoints":
+      [
+         {
+            "name": "Overview",
+            "link": "#"
+         },
+         {
+            "name": "Pricing",
+            "link": "#"
+         },
+         {
+            "name": "Marketplace",
+            "link": "#"
+         },
+         {
+            "name": "Features",
+            "link": "#"
+         },
+         {
+            "name": "Integrations",
+            "link": "#"
+         }
+      ]
+   },
+   {
+   "name": "Company",
+   "waypoints":
+      [
+         {
+            "name": "About",
+            "link": "#"
+         },
+         {
+            "name": "Team",
+            "link": "#"
+         },
+         {
+            "name": "Blog",
+            "link": "#"
+         },
+         {
+            "name": "Careers",
+            "link": "#"
+         }
+      ]
+   },
+   {
+   "name": "Connect",
+   "waypoints":
+      [
+         {
+            "name": "Contact",
+            "link": "#"
+         },
+         {
+            "name": "Newsletter",
+            "link": "#"
+         },
+         {
+            "name": "LinkedIn",
+            "link": "#"
+         }
+      ]
+   }
+]

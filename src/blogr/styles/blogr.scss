@@ -1,0 +1,81 @@
+@import "./variables.scss";
+
+body {
+   font-size: 16px;
+   font-family: $overpass;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: $cloud-burst;
+   font-weight: $bold;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1440px;
+   @media (max-width: 1440px) {
+      padding: 0 30px;
+   }
+   @media (max-width: 578px) {
+      padding: 0 15px;
+   }
+   &--no-max {
+      max-width: unset !important;
+   }
+}
+
+.btn {
+   border: none;
+   margin: 0;
+   width: auto;
+   overflow: visible;
+   border-radius: 128px;
+   padding: 10px 28px 8px 28px;
+   background-color: $white;
+   color: $burnt-sienna;
+   font-weight: $bold;
+   transition: all 0.25s ease-in-out;
+   &:hover,
+   &:focus {
+      background-color: rgba($white, 0.3);
+      color: $white;
+   }
+   &:active {
+      background-color: rgba($white, 0.45);
+      box-shadow: $shadow;
+   }
+   &--basic {
+      background-color: unset;
+      padding: 0;
+      margin: 0 12px;
+      color: $white;
+      border-radius: unset;
+      &:hover,
+      &:focus {
+         background-color: unset;
+         opacity: 0.8;
+      }
+      &:active {
+         opacity: 0.55;
+      }
+   }
+   &--outline {
+      background-color: unset;
+      border: 1px solid $white;
+      color: $white;
+      &:hover,
+      &:focus {
+         background-color: $white;
+         color: $burnt-sienna;
+      }
+      &:active {
+         opacity: 0.85;
+         box-shadow: $shadow;
+      }
+   }
+}
