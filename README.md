@@ -6,14 +6,14 @@
 <h1 align="center">
   FrontendMentor.io Projects
 </h1>
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/de31d6a0-926d-4e45-a3d9-f6563d2b0797/deploy-status)](https://app.netlify.com/sites/foxsaysfrontendmentor/deploys)
 
 ## 🤔 What is FrontendMentor.io?
 
 **FrontendMentor.io** is a community which offers free and premium templates to code which vary in difficulty level from 1 to 5. Main focus is to learn frontend by coding via providing only assets without any tools, environment or anything whatsoever.
 
 ### Current challenges
-| Name of challenge                                            | Level      | Directory                                                    | Progress | Link                                                      |
+| Name of challenge                                            | Level      | Directory                                                    | Progress | View                                                      |
 | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ | -------- | --------------------------------------------------------- |
 | [Blogr landing page](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP) | Junior (2) | [``` src/blogr```](https://github.com/FoxSaysDerp/frontendmentor-projects/tree/master/src/blogr) | *WIP*    | [Blogr](https://foxsaysfrontendmentor.netlify.app/blogr/) |
 |                                                              |            |                                                              |          |                                                           |
