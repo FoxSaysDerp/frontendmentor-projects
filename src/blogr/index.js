@@ -17,10 +17,8 @@ const Blogr = () => {
    // Parallax effects
    useEffect(() => {
       const heroImg = document.getElementById("heroBg");
-
       window.addEventListener("scroll", () => {
          const value = window.scrollY;
-
          heroImg.style.right = -100 - value * 0.5 + "px";
       });
    });
@@ -33,6 +31,7 @@ const Blogr = () => {
             options={particlesOptions}
             style={{ position: "relative", zIndex: 99999 }}
          />
+
          <section className="hero">
             <div className="container hero__container">
                <div className="hero-content">
@@ -55,12 +54,13 @@ const Blogr = () => {
                id="heroBg"
             />
          </section>
+
          <section className="intro">
             <div className="container container--no-max">
                <h2 className="intro__title">Designed for the future</h2>
 
                <div className="row">
-                  <div className="col-lg-4 offset-lg-1">
+                  <div className="col-lg-4 offset-lg-1 order-lg-1 order-2">
                      <div className="intro__content">
                         <h3>Introducing an extensible editor</h3>
                         <p>
@@ -82,7 +82,7 @@ const Blogr = () => {
                         </p>
                      </div>
                   </div>
-                  <div className="col-lg-6 offset-lg-1">
+                  <div className="col-lg-6 offset-lg-1 order-lg-12 order-1">
                      <BrowserView>
                         <Fade
                            direction="right"
@@ -95,7 +95,8 @@ const Blogr = () => {
                                  require("./images/illustration-editor-desktop.svg")
                                     .default
                               }
-                              alt=""
+                              alt="Blogr UI"
+                              className="img-center"
                            />
                         </Fade>
                      </BrowserView>
@@ -111,10 +112,90 @@ const Blogr = () => {
                                  require("./images/illustration-editor-mobile.svg")
                                     .default
                               }
-                              alt=""
+                              alt="Blogr UI"
+                              className="img-center"
                            />
                         </Fade>
                      </MobileView>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section className="soa">
+            <div className="container container--no-max">
+               <div className="row">
+                  <div className="col-lg-4 offset-lg-1">
+                     <div className="soa__content">
+                        <Fade
+                           direction="left"
+                           fraction={0.3}
+                           duration={2000}
+                           triggerOnce={true}
+                        >
+                           <img
+                              src={
+                                 require("./images/illustration-phones.svg")
+                                    .default
+                              }
+                              alt="Blogr on Mobile"
+                              className="img-center"
+                           />
+                        </Fade>
+                     </div>
+                  </div>
+                  <div className="col-lg-5 offset-lg-1">
+                     <div className="soa__content">
+                        <h3>State of the Art Infrastructure</h3>
+                        <p>
+                           With reliabilit and speed in mind worldwide data
+                           centers provide the backbone for ultra-fast
+                           connectivity. This ensures your site will load
+                           instantly, no matter where your readers are, keeping
+                           your site competetive.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section className="about">
+            <div className="container container--no-max">
+               <div className="row">
+                  <div className="col-lg-5">
+                     <div className="about__content">
+                        <img
+                           src={
+                              require("./images/illustration-laptop-desktop.svg")
+                                 .default
+                           }
+                           alt="Blogr on Laptop"
+                           className="img-center"
+                        />
+                     </div>
+                  </div>
+                  <div className="col-lg-4 offset-lg-1">
+                     <div className="about__content">
+                        <h3>Free, open, simple</h3>
+                        <p>
+                           Blogr is a free and open source application backed by
+                           a large community of helpful developers. It supports
+                           features such as code syntax highlighting, RSS feeds,
+                           social media integration, third-party commenting
+                           tools and works seamlessly with Google Analytics. The
+                           architecture is clean and is relatively easy to
+                           learn.
+                        </p>
+
+                        <h3>Powerful tooling</h3>
+                        <p>
+                           Batteries included. We built a simple and
+                           straightforward CLI tool that makes customization and
+                           deployment a breeze, but capable of producing even
+                           the most complicated sites.
+                        </p>
+                     </div>
                   </div>
                </div>
             </div>

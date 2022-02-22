@@ -18,7 +18,7 @@ h6 {
 .container {
    margin: 0 auto;
    max-width: 1440px;
-   @media (max-width: 1440px) {
+   @media (max-width: 992px) {
       padding: 0 30px;
    }
    @media (max-width: 578px) {
@@ -27,6 +27,11 @@ h6 {
    &--no-max {
       max-width: unset !important;
    }
+}
+
+.img-center {
+   display: block;
+   margin: auto;
 }
 
 .btn {
