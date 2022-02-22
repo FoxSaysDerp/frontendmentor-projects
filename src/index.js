@@ -4,7 +4,6 @@ import App from "./App";
 import Blogr from "./blogr/index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./styles/bootstrap/bootstrap-grid.scss";
 import "./styles/normalize.scss";
 
 ReactDOM.render(

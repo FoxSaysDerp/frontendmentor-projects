@@ -18,6 +18,9 @@
 .env.test.local
 .env.production.local
 
+# bootstrap soure
+src/styles/bootstrap
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
