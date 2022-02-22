@@ -1,1 +1,37 @@
 @import "../../styles/variables.scss";
+
+.footer {
+   background-color: $charade;
+   border-radius: 0 64px 0 0;
+   padding: 45px 0;
+   &__col {
+      color: $white;
+      font-weight: $semi-bold;
+      margin-bottom: 30px;
+      @media (max-width: 576px) {
+         margin-bottom: 45px;
+      }
+   }
+   &__list {
+      margin-top: 30px;
+      list-style: none;
+      padding-left: unset;
+      &-item {
+         margin-bottom: 15px;
+         > a {
+            text-decoration: none;
+            color: $french-gray;
+            transition: all 0.25s ease-in-out;
+            font-weight: $regular;
+            &:hover,
+            &:focus {
+               color: white;
+               text-decoration: underline;
+            }
+            &:active {
+               opacity: 0.8;
+            }
+         }
+      }
+   }
+}

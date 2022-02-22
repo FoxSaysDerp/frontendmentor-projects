@@ -2,15 +2,16 @@ import "./Header.scss";
 
 import React, { useState, useEffect } from "react";
 import classNames from "classnames";
+import menu from "../../constant/menu.json";
 
 import HeaderDropdown from "../HeaderDropdown/HeaderDropdown";
 
-const Header = (menu) => {
-   const [headerVisible, setHeaderVisible] = useState(menu.headerState);
+const Header = ({ headerState }) => {
+   const [headerVisible, setHeaderVisible] = useState(headerState);
 
    useEffect(() => {
-      setHeaderVisible(menu.headerState);
-   }, [menu.headerState]);
+      setHeaderVisible(headerState);
+   }, [headerState]);
 
    return (
       <>
@@ -25,7 +26,7 @@ const Header = (menu) => {
                      />
                   </a>
                   <ul className="header__nav-links">
-                     {menu.default.map((item, index) => (
+                     {menu.map((item, index) => (
                         <li
                            className="header__nav-link"
                            key={index}
