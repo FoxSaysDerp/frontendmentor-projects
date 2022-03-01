@@ -7,7 +7,7 @@ import Layout from "../blogr/components/Layout";
 import { Waypoint } from "react-waypoint";
 import Particles from "react-tsparticles";
 import { Fade } from "react-awesome-reveal";
-import { MobileView, BrowserView } from "react-device-detect";
+import { MobileView, BrowserView, isMobile } from "react-device-detect";
 
 import * as particlesOptions from "./constant/particles.json";
 
@@ -167,8 +167,11 @@ const Blogr = () => {
                      <div className="about__content">
                         <img
                            src={
-                              require("./images/illustration-laptop-desktop.svg")
-                                 .default
+                              isMobile
+                                 ? require("./images/illustration-laptop-mobile.svg")
+                                      .default
+                                 : require("./images/illustration-laptop-desktop.svg")
+                                      .default
                            }
                            alt="Blogr on Laptop"
                            className="img-center"

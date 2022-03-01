@@ -15,6 +15,61 @@ h6 {
    font-weight: $bold;
 }
 
+h1 {
+   font-size: 2rem;
+   @media (max-width: 992px) {
+      font-size: 2.8rem;
+   }
+   @media (max-width: 768px) {
+      font-size: 3.5rem;
+   }
+}
+h2 {
+   font-size: 1.8rem;
+   @media (max-width: 992px) {
+      font-size: 2.65rem;
+   }
+   @media (max-width: 768px) {
+      font-size: 3.3rem;
+   }
+}
+h3 {
+   font-size: 1.65rem;
+   @media (max-width: 992px) {
+      font-size: 2.4rem;
+   }
+   @media (max-width: 768px) {
+      font-size: 3.05rem;
+   }
+}
+h4 {
+   font-size: 1.5rem;
+   @media (max-width: 992px) {
+      font-size: 2.2rem;
+   }
+   @media (max-width: 768px) {
+      font-size: 2.95rem;
+   }
+}
+h5 {
+   font-size: 1.35rem;
+   @media (max-width: 992px) {
+      font-size: 1.95rem;
+   }
+   @media (max-width: 768px) {
+      font-size: 2.75rem;
+   }
+}
+h6 {
+   font-size: 1.2rem;
+   @media (max-width: 992px) {
+      font-size: 1.75rem;
+   }
+   @media (max-width: 768px) {
+      font-size: 2.5rem;
+   }
+}
+
 .container {
    margin: 0 auto;
    max-width: 1440px;
