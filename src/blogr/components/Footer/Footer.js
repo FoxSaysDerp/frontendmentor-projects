@@ -7,7 +7,7 @@ const Footer = () => {
    return (
       <footer className="footer">
          <div className="container container--no-max">
-            <div className="row justify-md-content-evenly">
+            <div className="row footer__row">
                <div className="col-lg-2 col-md-12 col-12">
                   <div className="footer__col">
                      <img
