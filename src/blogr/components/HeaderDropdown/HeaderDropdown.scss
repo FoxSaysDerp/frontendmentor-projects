@@ -3,6 +3,12 @@
 .header-dropdown {
    position: relative;
    cursor: pointer;
+   white-space: nowrap;
+   &--btn {
+      .header-dropdown__title {
+         color: unset;
+      }
+   }
    &__title {
       color: $white;
       font-weight: $bold;
@@ -25,7 +31,12 @@
       &--hidden {
          display: none;
       }
+      &--right {
+         left: unset;
+         right: 0;
+      }
       &-item {
+         text-align: left;
          > a {
             font-size: 0.95rem;
             color: #000;
@@ -45,6 +56,7 @@
    &__arrow {
       transition: all 0.2s ease-in-out;
       margin-left: 5px;
+      display: inline-block;
       &--active {
          transform: rotate(180deg);
       }

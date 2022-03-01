@@ -13,16 +13,32 @@ const Header = ({ headerState }) => {
       setHeaderVisible(headerState);
    }, [headerState]);
 
+   const tabletLogin = {
+      name: "Login",
+      waypoints: [
+         {
+            name: "Login",
+            link: "#",
+         },
+         {
+            name: "Sign up",
+            link: "#",
+         },
+      ],
+   };
    return (
       <>
          <header className={classNames("", { scrolled: !headerVisible })}>
             <nav className="container header">
                <div className="header__nav header__nav--left">
-                  <a href="/" style={{ padding: "8px" }}>
+                  <a
+                     href="/"
+                     style={{ padding: "8px" }}
+                     className="header__logo"
+                  >
                      <img
                         src={require("../../images/logo.svg").default}
                         alt="Blogr"
-                        className="header__logo"
                      />
                   </a>
                   <ul className="header__nav-links">
@@ -40,6 +56,9 @@ const Header = ({ headerState }) => {
                <div className="header__nav header__nav--right">
                   <button className="btn btn--basic header__btn">Login</button>
                   <button className="btn header__btn">Sign up</button>
+               </div>
+               <div className="header__nav header__nav--login-btn">
+                  <HeaderDropdown right btn menuItem={tabletLogin} />
                </div>
             </nav>
          </header>

@@ -15,20 +15,47 @@ header {
       justify-content: space-between;
       transition: all 0.25s ease-in-out;
       &__logo {
-         max-height: 32px;
+         @media (max-width: 768px) {
+         }
+         > img {
+            max-height: 32px;
+         }
       }
       &__nav {
          display: flex;
          align-items: center;
          &--left {
+            @media (max-width: 768px) {
+               width: 100%;
+            }
+         }
+         &--right {
+            @media (max-width: 768px) {
+               display: none;
+            }
+         }
+         &--login-btn {
+            @media (min-width: 768px) {
+               display: none;
+            }
          }
       }
       &__nav-links {
          display: flex;
          list-style: none;
+         padding-left: unset;
+         margin-left: 2rem;
+         @media (max-width: 768px) {
+            margin-left: unset;
+            width: 100%;
+            justify-content: space-evenly;
+         }
       }
       &__nav-link {
          margin: 0 15px;
+         @media (max-width: 768px) {
+            margin: 0 10px;
+         }
       }
    }
    &.scrolled {

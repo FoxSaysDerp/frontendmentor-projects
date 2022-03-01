@@ -1,13 +1,18 @@
 import "./HeaderDropdown.scss";
 
 import React, { useState } from "react";
+import classNames from "classnames";
 
-const HeaderDropdown = ({ menuItem }) => {
+const HeaderDropdown = ({ menuItem, btn, right }) => {
    const [active, setActive] = useState(false);
 
    return (
       <div
-         className="header-dropdown"
+         className={classNames(
+            "header-dropdown",
+            { "btn header-dropdown--btn": btn },
+            { "header-dropdown--right": right }
+         )}
          onFocus={() => setActive(true)}
          onBlur={() => setActive(false)}
          onMouseEnter={() => setActive(true)}
@@ -15,7 +20,13 @@ const HeaderDropdown = ({ menuItem }) => {
       >
          <span className="header-dropdown__title">{menuItem.name}</span>
          <img
-            src={require("../../images/icon-arrow-light.svg").default}
+            src={
+               btn
+                  ? active
+                     ? require("../../images/icon-arrow-light.svg").default
+                     : require("../../images/icon-arrow-dark.svg").default
+                  : require("../../images/icon-arrow-light.svg").default
+            }
             alt=""
             className={
                active
@@ -25,11 +36,15 @@ const HeaderDropdown = ({ menuItem }) => {
          />
 
          <ul
-            className={
-               active
-                  ? "header-dropdown__list"
-                  : "header-dropdown__list header-dropdown__list--hidden"
-            }
+            className={classNames(
+               "header-dropdown__list",
+               {
+                  "header-dropdown__list--hidden": !active,
+               },
+               {
+                  "header-dropdown__list--right": right,
+               }
+            )}
          >
             {menuItem.waypoints.map((item, index) => (
                <li className="header-dropdown__list-item" key={index}>
