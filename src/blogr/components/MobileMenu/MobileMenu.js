@@ -44,7 +44,7 @@ const MobileMenu = ({ headerVisible }) => {
                   );
                })}
                <div className="mobile-menu__login">
-                  <a href="#">Login</a>
+                  <span className="mobile-menu__link">Login</span>
                   <button className="btn btn--gradient">Sign up</button>
                </div>
             </div>
