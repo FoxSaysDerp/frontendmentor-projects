@@ -13,6 +13,7 @@ const Footer = () => {
                      <img
                         src={require("../../images/logo.svg").default}
                         alt="Blogr"
+                        className="img-fluid "
                      />
                   </div>
                </div>

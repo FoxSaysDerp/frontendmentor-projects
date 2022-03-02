@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.mobile-menu {
+   &__btn {
+      appearance: none;
+      border: 0;
+      background-color: unset;
+      padding: 0;
+      margin: 0;
+   }
+   &__window {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 102px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: calc(100vh - 30px - 102px);
+      width: calc(100% - 60px);
+      background-color: $white;
+      border-radius: 8px;
+      padding: 24px 16px;
+      box-shadow: $shadow;
+      transition: all 0.25s ease-in-out;
+      &--lower {
+         top: 140px;
+         height: calc(100vh - 30px - 140px);
+      }
+   }
+   &__login {
+      position: relative;
+      margin-top: 15px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background-color: $athens-gray;
+      }
+      > .btn {
+         width: max-content;
+         padding: 12px 38px;
+         margin-top: 12px;
+      }
+   }
+   a {
+      text-align: center;
+      font-weight: $bold;
+      font-size: 1.2rem;
+      display: block;
+      color: $cloud-burst;
+      text-decoration: none;
+      cursor: pointer;
+      display: block;
+      white-space: nowrap;
+      transition: all 0.25s ease-in;
+      &:hover,
+      &:focus {
+         text-decoration: underline;
+      }
+      &:active {
+         opacity: 0.8;
+      }
+   }
+}

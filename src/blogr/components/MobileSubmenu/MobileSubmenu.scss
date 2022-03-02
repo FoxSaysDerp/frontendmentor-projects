@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.mobile-submenu {
+   margin: 15px 0;
+   &__title {
+      text-align: center;
+      font-weight: $bold;
+      font-size: 1.2rem;
+      display: block;
+      color: $cloud-burst;
+      cursor: pointer;
+      display: block;
+      white-space: nowrap;
+      transition: all 0.25s ease-in;
+      &--active {
+         opacity: 0.5;
+      }
+   }
+   &__arrow {
+      width: 12px;
+      margin-left: 8px;
+      transition: all 0.25s ease-in-out;
+      &--active {
+         transform: rotate(180deg);
+      }
+   }
+   &__list {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 18px;
+      padding: 22px 8px;
+      background-color: $athens-gray;
+      border-radius: 8px;
+      animation: grow 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      height: max-content;
+      &-item {
+         > a {
+            text-decoration: unset;
+            color: $cloud-burst;
+            font-weight: $semi-bold;
+         }
+      }
+   }
+}
+
+@keyframes grow {
+   from {
+      height: 0px;
+      opacity: 0;
+      margin-top: -5px;
+   }
+   to {
+      height: 100px;
+      opacity: 1;
+      margin-top: unset;
+   }
+}

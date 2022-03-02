@@ -50,7 +50,7 @@ const Blogr = () => {
             <img
                src={require("./images/bg-pattern-intro.svg").default}
                alt=""
-               className="hero__bg"
+               className="img-fluid hero__bg"
                id="heroBg"
             />
          </section>
@@ -96,7 +96,7 @@ const Blogr = () => {
                                     .default
                               }
                               alt="Blogr UI"
-                              className="img-center"
+                              className="img-fluid img-center"
                            />
                         </Fade>
                      </BrowserView>
@@ -113,7 +113,7 @@ const Blogr = () => {
                                     .default
                               }
                               alt="Blogr UI"
-                              className="img-center"
+                              className="img-fluid img-center"
                            />
                         </Fade>
                      </MobileView>
@@ -139,7 +139,7 @@ const Blogr = () => {
                                     .default
                               }
                               alt="Blogr on Mobile"
-                              className="img-center"
+                              className="img-fluid img-center"
                            />
                         </Fade>
                      </div>
@@ -174,7 +174,7 @@ const Blogr = () => {
                                       .default
                            }
                            alt="Blogr on Laptop"
-                           className="img-center"
+                           className="img-fluid img-center"
                         />
                      </div>
                   </div>

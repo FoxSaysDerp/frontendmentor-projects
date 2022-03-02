@@ -138,4 +138,16 @@ h6 {
          box-shadow: $shadow;
       }
    }
+   &--gradient {
+      background: $header-gradient;
+      color: $white;
+      &:hover,
+      &:focus {
+         box-shadow: $shadow;
+      }
+      &:active {
+         opacity: 0.9;
+         transform: scale(0.95);
+      }
+   }
 }

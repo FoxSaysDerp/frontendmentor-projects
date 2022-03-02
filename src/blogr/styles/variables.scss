@@ -29,6 +29,9 @@ $trout: #4d5761;
 // Footer bg
 $shark: #25252d;
 
+// Mobile menu bg
+$athens-gray: #efeff1;
+
 //// Gradients
 // Intro
 $sandy-brown: #f39674;
@@ -37,8 +40,8 @@ $header-gradient: linear-gradient(90deg, $sandy-brown, $carnation);
 
 // Body
 $charade: #2c2d3e;
-$gun-powder: #3f4062;
-$body-gradient: linear-gradient(90deg, $charade, $gun-powder);
+$gunpowder: #3f4062;
+$body-gradient: linear-gradient(90deg, $charade, $gunpowder);
 
 // Shadows
 $shadow: 8px 8px 43px -10px rgba($shark, 0.5);

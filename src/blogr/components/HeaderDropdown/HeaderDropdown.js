@@ -30,8 +30,8 @@ const HeaderDropdown = ({ menuItem, btn, right }) => {
             alt=""
             className={
                active
-                  ? "header-dropdown__arrow header-dropdown__arrow--active"
-                  : "header-dropdown__arrow"
+                  ? "img-fluid header-dropdown__arrow header-dropdown__arrow--active"
+                  : "img-fluid header-dropdown__arrow"
             }
          />
 
